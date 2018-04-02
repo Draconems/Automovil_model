@@ -26,7 +26,7 @@ library(gridExtra)
 library(scales)
 
 #Definir el directorio de trabajo
-setwd("C:/Users/lr_29/Desktop/Big Data Goal/R/Proyectos R Studio/Auto_Multi")
+setwd("...")
 auto<-read.csv(file="automobile_data.csv",header=TRUE,na.strings = "?")
 head(auto)
 View(auto)
