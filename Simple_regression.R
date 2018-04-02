@@ -5,7 +5,7 @@
 #(b) its assigned insurance risk rating, 
 #(c) its normalized losses in use as compared to other cars. 
 
-#Regresion linear, regresion local, dependencia entre variables y diseño de modelos para predicciones. 
+#Regresion linear, regresion local, dependencia entre variables y diseÃ±o de modelos para predicciones. 
 
 
 #Prediccion de los precios con base en las especificaciones del automovil. 
@@ -26,7 +26,11 @@ library(gridExtra)
 library(scales)
 
 #Definir el directorio de trabajo
+<<<<<<< HEAD
 setwd("...")
+=======
+setwd("....")
+>>>>>>> c9ca5fcfbe661d85f3440c4b95c6d48c79299fcb
 auto<-read.csv(file="automobile_data.csv",header=TRUE,na.strings = "?")
 head(auto)
 View(auto)
@@ -80,7 +84,7 @@ set.seed(5)
 sample.size<-0.7
 
 #Generacion de muestras aleatorias y permutaciones.
-#Multiplica el tamaño de la poblacion por el tamaño de la muestra y lo redondea.
+#Multiplica el tamaÃ±o de la poblacion por el tamaÃ±o de la muestra y lo redondea.
 #round(length(auto$price)*sample.size) 
 #Selecciona el 70% de la poblacion de auto para muestras.
 s1<-auto[sample.int(length(auto$price),round(length(auto$price)*sample.size)),]
@@ -179,7 +183,7 @@ grid.arrange(p1, p2, p3, p4, p5, p6, ncol=2)
   summary(fit)
   
   # Check how good is the model on the training set - correlation^2, RME and MAE
-  #Verificacion de las predicciones del modelo usando la correlacion, RME (Error cuadrático medio).
+  #Verificacion de las predicciones del modelo usando la correlacion, RME (Error cuadrÃ¡tico medio).
   #MAE, error absoluto medio.
   #https://medium.com/human-in-a-machine-world/mae-and-rmse-which-metric-is-better-e60ac3bde13d
   
